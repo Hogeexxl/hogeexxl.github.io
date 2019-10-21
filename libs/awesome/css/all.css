@@ -2397,9 +2397,6 @@ readers do not read off random characters that represent icons */
 .fa-life-ring:before {
   content: "\f1cd"; }
 
-.fa-lightbulb:before {
-  content: "\f0eb"; }
-
 .fa-line:before {
   content: "\f3c0"; }
 

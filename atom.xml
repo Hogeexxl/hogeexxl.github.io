@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>猴人语</title>
+  
+  <subtitle>Hogee 说垃圾话的地方</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://hogeexxl.github.io/"/>
+  <updated>2019-10-21T01:21:42.491Z</updated>
+  <id>https://hogeexxl.github.io/</id>
+  
+  <author>
+    <name>HoGee</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://hogeexxl.github.io/2019/10/21/hello-world/"/>
+    <id>https://hogeexxl.github.io/2019/10/21/hello-world/</id>
+    <published>2019-10-21T01:21:42.491Z</published>
+    <updated>2019-10-21T01:21:42.491Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
