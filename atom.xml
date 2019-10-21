@@ -5,9 +5,9 @@
   <subtitle>Hogee 说垃圾话的地方</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://hogeexxl.github.io/"/>
-  <updated>2019-10-21T05:02:12.833Z</updated>
-  <id>https://hogeexxl.github.io/</id>
+  <link href="http://talk.hogee.fun/"/>
+  <updated>2019-10-21T07:09:05.041Z</updated>
+  <id>http://talk.hogee.fun/</id>
   
   <author>
     <name>HoGee</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>使用七牛云 + PicGo 搭建图床并快速获取图片外链</title>
-    <link href="https://hogeexxl.github.io/2019/10/21/markdownbed/"/>
-    <id>https://hogeexxl.github.io/2019/10/21/markdownbed/</id>
+    <link href="http://talk.hogee.fun/2019/10/21/markdownbed/"/>
+    <id>http://talk.hogee.fun/2019/10/21/markdownbed/</id>
     <published>2019-10-21T01:25:00.000Z</published>
-    <updated>2019-10-21T05:02:12.833Z</updated>
+    <updated>2019-10-21T07:09:05.041Z</updated>
     
     <summary type="html">
     
@@ -39,17 +39,17 @@
     </summary>
     
     
-      <category term="工作流" scheme="https://hogeexxl.github.io/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+      <category term="工作流" scheme="http://talk.hogee.fun/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     
     
-      <category term="Markdown" scheme="https://hogeexxl.github.io/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://talk.hogee.fun/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://hogeexxl.github.io/2019/10/21/hello-world/"/>
-    <id>https://hogeexxl.github.io/2019/10/21/hello-world/</id>
+    <link href="http://talk.hogee.fun/2019/10/21/hello-world/"/>
+    <id>http://talk.hogee.fun/2019/10/21/hello-world/</id>
     <published>2019-10-21T01:21:42.491Z</published>
     <updated>2019-10-21T01:21:42.491Z</updated>
     
