@@ -4,8 +4,21 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 猴人语">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="使用七牛云 + PicGo 搭建图床并快速获取图片外链, 猴人语">
+    <meta name="description" content="背景
+2019 年 9 月开始优化需求文档要好看
+
+厌恶了 word 排版的麻烦和不稳定
+
+每次花大量时间排版
+
+每次排版样式还不一样，总需要想上个文档用什么样式
+
+千辛万苦排好了，不一样的人不一样的环境打开还不一定一样
+
+
+
+开始接触 m">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +26,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | 猴人语</title>
+    <title>使用七牛云 + PicGo 搭建图床并快速获取图片外链 | 猴人语</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -219,13 +232,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://img.hogee.fun/girl-1736419_960_720.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        使用七牛云 + PicGo 搭建图床并快速获取图片外链
                     </div>
                 </div>
             </div>
@@ -335,12 +348,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%B7%A5%E4%BD%9C%E6%B5%81/" class="post-category">
+                                工作流
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -355,14 +381,14 @@
                     
                     <div class="info-break-policy">
                         <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        73
+                        1.2k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        4 分
                     </div>
                     
                 
@@ -378,15 +404,132 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><ul>
+<li><p>2019 年 9 月开始优化需求文档<del>要好看</del></p>
+</li>
+<li><p>厌恶了 word 排版的麻烦和不稳定</p>
+<ul>
+<li><p>每次花大量时间排版</p>
+</li>
+<li><p>每次排版样式还不一样，总需要想上个文档用什么样式</p>
+</li>
+<li><p>千辛万苦排好了，不一样的人不一样的环境打开还不一定一样</p>
+</li>
+</ul>
+</li>
+<li><p>开始接触 markdown <del>其实早就想用，但是断断续续没坚持下来</del>，这次下决心使用它</p>
+</li>
+<li><p>用 markdown 不可避免使用图床，因为写的是工作用的文档，对图床有一定要求：</p>
+<ul>
+<li><p>稳定，不会突然带着我的资料跑路</p>
+</li>
+<li><p>速度，不要挑战开发的耐心…</p>
+</li>
+<li><p>空间和流量费用倒是其次，毕竟非公开的文档要用不了多少流量</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="选择七牛"><a href="#选择七牛" class="headerlink" title="选择七牛"></a>选择七牛</h2><p>我最终选择了<strong>七牛云</strong>，理由：</p>
+<ul>
+<li><p>国内云服务大厂，意思是不会带着我的数据突然跑路</p>
+</li>
+<li><p>个人用户有 10G 的免费永久存储空间，对于只存图片的图床来说够用</p>
+</li>
+<li><p>不限制上传流量，每月免费 PUT/DELETE 10 万次请求以及每月免费 GET 100 万次请求，也完全够用</p>
+</li>
+<li><p>每月免费下载的流量 10GB，够用，<del>毕竟小透明</del></p>
+</li>
+<li><p>免费的 CDN 加速，再不用担心别人躲在山洞里看我的文档</p>
+</li>
+</ul>
+<h2 id="注册＋实名认证"><a href="#注册＋实名认证" class="headerlink" title="注册＋实名认证"></a>注册＋实名认证</h2><p>实名认证后才能享受这些福利，个人用户申请个人认证就好。认证方式可以选支付宝或者银行转账认证，按提示认证后等待审核。七牛将在 3 个工作日内完成审核，审核结果将通过邮件和短信通知</p>
+<p>我等了 30 分钟</p>
+<h2 id="申请域名并备案"><a href="#申请域名并备案" class="headerlink" title="申请域名并备案"></a>申请域名并备案</h2><p>设置图床需要用到<code>域名</code>。以前七牛云是免费提供一个测试域名的，但现在政策改为测试域名只有 <strong>1 个月</strong>使用期，如果不绑定其他的域名，那到期以后图床也不能使用了，所以还是得自己准备一个域名</p>
+<p>有很多地方都可以申请到免费域名，本来很方便的事情，但由于你懂的原因，国内还需要对域名进行<code>备案</code>，这是个麻烦事</p>
+<p>但好在一切麻烦事都可以用💸减少麻烦：</p>
+<ul>
+<li><p>8 块钱在阿里云买了个域名</p>
+</li>
+<li><p>10 块钱找私人买了个备案号</p>
+</li>
+<li><p>然后老老实实走流程：</p>
+<ul>
+<li><p>阿里审核 &lt; 1 天</p>
+</li>
+<li><p>管局审核 &gt; 半个月</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>备案申请下来以后前期准备就齐活了，下面开工</strong></p>
+<h2 id="新建图床"><a href="#新建图床" class="headerlink" title="新建图床"></a>新建图床</h2><p>首先在<a href="https://portal.qiniu.com/bucket/create" target="_blank" rel="noopener">七牛云对象储存</a>创建存储空间</p>
+<p><img src="http://img.hogee.fun/20190928215256.png" alt=""> </p>
+<ul>
+<li><p>存储空间名称：随意</p>
+</li>
+<li><p>存储区域：选近的，华南</p>
+</li>
+<li><p>访问控制：只能公开，否则别人看不到</p>
+</li>
+</ul>
+<p>创建完成后就已经可以正常使用了，此时的操作步骤是：</p>
+<blockquote>
+<ol>
+<li>登录七牛云，进入存储空间—内容管理</li>
+<li>上传图片</li>
+<li>复制生成的外链</li>
+<li>粘贴至文档内</li>
+</ol>
+</blockquote>
+<p>需求解决了，但每张图片都要这么操作一次，没有效率并且一点都不酷！</p>
+<h2 id="如何变酷"><a href="#如何变酷" class="headerlink" title="如何变酷"></a>如何变酷</h2><h3 id="更换域名"><a href="#更换域名" class="headerlink" title="更换域名"></a>更换域名</h3><p>虽然空间创建后七牛云自动分配了一个<code>测试域名</code>，但只有 1 个月，并且很长，为了避免麻烦当然还得用自己的省心</p>
+<p>在操作面板内选择<code>绑定域名</code></p>
+<p><img src="http://img.hogee.fun/20190928223037.png" alt=""></p>
+<p><img src="http://img.hogee.fun/20190928223111.png" alt=""> </p>
+<ul>
+<li><p>加速域名：填写自己的域名，建议使用二级域名</p>
+</li>
+<li><p>通信协议：当然 HTTP 了，HTTPS不算在免费流量内<del>贫穷的泪水</del></p>
+</li>
+<li><p>覆盖范围：我选全球</p>
+</li>
+<li><p>其他默认</p>
+</li>
+</ul>
+<p>添加后七牛会提供<code>CNAME地址</code></p>
+<p><img src="http://img.hogee.fun/20190928223559.png" alt=""></p>
+<p>接下来回到阿里云解析，给域名添加<code>CNAME</code>解析记录，解析完成后回到七牛云，在==内容管理==下设置<code>外链默认域名</code>（如果之前已经删掉测试域名，这里就默认使用刚才添加的自定义域名了）</p>
+<h3 id="配置PicGO"><a href="#配置PicGO" class="headerlink" title="配置PicGO"></a>配置PicGO</h3><ul>
+<li><p>下载安装 <a href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener">PicGO</a></p>
+</li>
+<li><p>打开设置面板，在图床设置种选择七牛图床</p>
+<p>  <img src="http://img.hogee.fun/20190929082737.png" alt="1569682064855"></p>
+</li>
+<li><p><code>AccessKey</code>和<code>SecretKey</code>在七牛云的==个人面板-秘钥管理==中得到</p>
+</li>
+<li><p>存储空间名：填上七牛云中设置的名字</p>
+</li>
+<li><p>访问地址：填上刚才设置的<code>自定义域名</code>，<strong>记得添加 http://</strong></p>
+</li>
+<li><p>确认存储区域：区域对应需要填入<code>区域代码</code>，对应代码如下</p>
+<p><img src="http://img.hogee.fun/20190928225407.png" alt=""> </p>
+</li>
+<li><p>其他不填，少填少错</p>
+</li>
+</ul>
+<p>至此，写文档时的贴图流程变为：</p>
+<blockquote>
+<ol>
+<li>复制图片</li>
+<li>按 PicGO 快捷键上传至图床</li>
+<li>Ctrl+V 粘贴链接到文档</li>
+</ol>
+</blockquote>
+<p>  全键盘操作并且全程不到 2 秒，于是你成为了<code>酷boy</code>🕺</p>
+<p>当然你还可以打开 PicGo 面板，批量拖入图片，一次性上传多张图片</p>
+<p>无论使用什么方式，通过 PicGo 上传的图片，都可以在面板中管理</p>
+<p>​     </p>
 
             </div>
             <hr/>
@@ -412,7 +555,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hogeexxl.github.io/2019/10/21/hello-world/">https://hogeexxl.github.io/2019/10/21/hello-world/</a>
+                    <a href="https://hogeexxl.github.io/2019/10/21/markdownbed/">https://hogeexxl.github.io/2019/10/21/markdownbed/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -449,7 +592,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -614,9 +761,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/10/21/markdownbed/">
                     <div class="card-image">
@@ -633,9 +781,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -648,6 +796,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -663,7 +812,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2019/10/21/hello-world/">
@@ -693,7 +842,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
